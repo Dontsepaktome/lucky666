@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>n°7 LUCKY 666</title>
+    <style>
+        * { 
+            margin: 0; padding: 0; box-sizing: border-box; 
+            cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym49.cur'), auto !important;
+        }
+
+        body { 
+            background: #000 url('https://64.media.tumblr.com/589321c6109ffbb824d86d798481aa9b/2ad3f19ced2e1978-91/s1280x1920/ed7b6e3c4042d5e97237a099b17bb667b54e818c.gif') fixed center; 
+            background-size: cover; color: #fff; font-family: monospace; overflow: hidden; height: 100vh; 
+        }
+
+        .header-box { 
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; text-align: center; 
+            padding: 25px; background: rgba(0,0,0,0.95); border-bottom: 3px solid #ff00ff; 
+            height: 180px; display: flex; justify-content: center; align-items: center; 
+            box-shadow: 0 0 20px #ff00ff;
+        }
+
+        #animated-title { 
+            font-size: 44px; text-transform: uppercase; font-weight: 900; 
+            display: flex; align-items: center; justify-content: center; gap: 150px; 
+            width: 100%;
+        }
+
+        .fairy-container { position: relative; width: 120px; height: 60px; }
+        .fairy { position: absolute; width: 60px; filter: hue-rotate(280deg) brightness(1.5); pointer-events: none; }
+
+        @keyframes infinityMove {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(40px, -20px); }
+            50% { transform: translate(80px, 0); }
+            75% { transform: translate(40px, 20px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        .f1 { animation: infinityMove 4s linear infinite; }
+        .f2 { animation: infinityMove 5.2s linear infinite reverse; animation-delay: 1s; }
+        .f3 { animation: infinityMove 4.5s linear infinite; animation-delay: 0.5s; }
+        .f4 { animation: infinityMove 6s linear infinite reverse; animation-delay: 2s; }
+
+        .letter { 
+            display: inline-block; transition: all 0.4s ease; 
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+            background-image: url('https://media.giphy.com/media/l41lTjJp9N6V8V5S0/giphy.gif'); 
+            filter: drop-shadow(0 0 10px #ff00ff); 
+        }
+
+        .fM { animation: fS 0.6s infinite linear; }
+        @keyframes fS { 0% { -webkit-text-fill-color: #0ff; } 50% { -webkit-text-fill-color: #ff1493; } 100% { -webkit-text-fill-color: #ffd700; } }
+
+        .main-matrix { 
+            position: relative; z-index: 10; display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+            gap: 12px; padding: 220px 30px 40px 30px; height: 100vh; 
+            overflow-y: scroll; scrollbar-width: none; 
+        }
+        .main-matrix::-webkit-scrollbar { display: none; }
+
+        .p { 
+            background: rgba(0, 0, 0, 0.85); border: 1px solid #444; 
+            display: flex; align-items: center; justify-content: space-between; 
+            padding: 10px 8px; transition: 0.2s; cursor: pointer; 
+        }
+        .p:hover { background: #fff; transform: scale(1.08); box-shadow: 0 0 25px #ff00ff; }
+        .p span { color: #0ff; font-size: 10px; font-weight: bold; text-transform: uppercase; text-align: center; flex-grow: 1; }
+        .p:hover span { color: #000; }
+        
+        .glitter-icon { width: 20px; height: 20px; }
+        #ang-follower { position: fixed; width: 75px; z-index: 9999; pointer-events: none; filter: hue-rotate(300deg); }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+
+<div class="header-box">
+    <div id="animated-title">
+        <div class="fairy-container">
+            <img src="https://4.bp.blogspot.com/-s7bveXrk6h0/T9lMOB24XcI/AAAAAAAAknk/_slOC26nQts/s1600/glitter-graphics-angels-421213.gif" class="fairy f1">
+            <img src="https://4.bp.blogspot.com/-s7bveXrk6h0/T9lMOB24XcI/AAAAAAAAknk/_slOC26nQts/s1600/glitter-graphics-angels-421213.gif" class="fairy f2">
+        </div>
+        <div id="lC" style="display:flex;">n°7 ⅄ƆՈ˥ 666</div>
+        <div class="fairy-container">
+            <img src="https://4.bp.blogspot.com/-s7bveXrk6h0/T9lMOB24XcI/AAAAAAAAknk/_slOC26nQts/s1600/glitter-graphics-angels-421213.gif" class="fairy f3">
+            <img src="https://4.bp.blogspot.com/-s7bveXrk6h0/T9lMOB24XcI/AAAAAAAAknk/_slOC26nQts/s1600/glitter-graphics-angels-421213.gif" class="fairy f4">
+        </div>
+    </div>
+</div>
+
+<img id="ang-follower" src="https://i3.glitter-graphics.org/pub/848/848663axm1u5qswb.gif">
+<div class="main-matrix" id="mX"></div>
+
+<script>
+    (function(){
+        // 1. TÍTULO DINÂMICO NA ABA DO NAVEGADOR
+        let titles = ["n°7 LUCKY", "ENTER THE VOID", "666.EXE", "⅄ƆՈ˥"];
+        let i_title = 0;
+        setInterval(() => {
+            document.title = titles[i_title % titles.length];
+            i_title++;
+        }, 1000);
+
+        // 2. CONFIGURAÇÃO DOS DEUSES E LINKS CRIPTOGRAFADOS
+        const gods = ["RA", "ANUBIS", "OSIRIS", "ISIS", "HORUS", "SET", "THOTH", "BASTET", "SOBEK", "SEKHMET", "NUT", "GEB", "PTAH", "AMUN", "MUT", "KHONSU", "ZEUS", "HERA", "POSEIDON", "HADES", "ATHENA", "APOLLO", "ARTEMIS", "ARES", "APHRODITE", "HEPHAESTUS", "HERMES", "HESTIA", "DIONYSUS", "DEMETER", "PERSEPHONE", "HECATE", "PAN", "JUPITER", "JUNO", "NEPTUNE", "PLUTO", "MINERVA", "MARS", "VENUS", "VULCAN", "MERCURY", "VESTA", "BACCHUS", "CERES", "DIANA", "JANUS", "QUIRINUS", "SATURN", "OPS", "MICHAEL", "GABRIEL", "RAPHAEL", "URIEL", "METATRON", "SARIEL", "RAGUEL", "REMIEL", "JOPHIEL", "ZADKIEL", "CHAMUEL", "ANAEL", "CASSIEL", "MALACHI", "SERAPHIM", "CHERUBIM", "THRONES"];
+        const crypt = ["eHZpZGVvcy5jb20v", "cG9ybm96ZWJyYS5jb20v", "eXC9jb20v", "eHlvdW5nLm5ldC8=", "dGVlbmhkcG9ybi5uYW1lLw==", "dnRlZW5wb3JuLmNvbS8=", "eHh4LWhkLXR1YmUuY29tLw==", "dGVlbnNub3cuY29tLw==", "cG9ybm9lbnRlLnR2Lw==", "YnJ1dGFsc2V4dmlkZW8uY29tLw==", "eHZpZGVvcy5jb20vYmx1ZV9iaXJkX2ZpbG1z", "bGV0c3Bvcm4uY29tL2thdGVnb3JpZW4=", "YXNzNGFsbC5jb20v", "cmVhbGluY2VzdHR1YmUuY29tL3B0Lw==", "cG9ybm9yYW1hLmNvbS8=", "MTh0ZWVuc2V4Lm1lLw==", "dHViZTIwMjAuY29tL3B0Lw==", "dHViZTIwMDAuY29tLw==", "dmVibC5uZXQvdHViZS90ZWVuLw==", "ZnVja3RlZW4ueHh4Lw==", "dGVlbi10dWhlLXBvcm4uY29tLw==", "c2V4ZW50ZS5jb20v", "dGVlbnJhcGUubmV0Lw==", "eG54eC1wb3Jub3MueHh4Lw==", "ZWluZmFjaHRpdHRlbi5jb20v", "cG9ybm9hZmZlLm5ldC8="];
+
+        const symbols = "†‡☠☥⚚☤אבגדהוזחטיכלמנסעפצקרשת";
+        const mX = document.getElementById('mX');
+
+        gods.forEach((name, i) => {
+            const div = document.createElement('div');
+            div.className = 'p';
+            div.innerHTML = `<img src="https://www.gifanimategratis.eu/img/glitter/hello_kitty/hello1.gif" class="glitter-icon"><span>${name}</span><img src="https://i3.glitter-graphics.org/pub/1006/1006184cimdkemb95.gif" class="glitter-icon">`;
+            div.onclick = () => window.open('https://' + atob(crypt[i % crypt.length]), '_blank');
+            mX.appendChild(div);
+            
+            let s = div.querySelector('span'), it;
+            const start = () => it = setInterval(() => { s.innerText = name.split('').map(() => symbols[Math.floor(Math.random()*symbols.length)]).join(''); }, 100);
+            div.onmouseenter = () => { clearInterval(it); s.innerText = name; };
+            div.onmouseleave = start;
+            start();
+        });
+
+        // 3. ANIMAÇÃO DO TÍTULO CHAOS
+        const lC = document.getElementById('lC'), chars = [...lC.innerText.split('').map(c => {
+            const s = document.createElement('span'); s.innerText = c === ' ' ? '\u00A0' : c; s.className = 'letter'; lC.appendChild(s); return s;
+        })];
+        lC.firstChild.remove();
+        (function anim(){
+            const m = Math.random() > 0.5;
+            chars.forEach(c => {
+                if(m) c.style.transform = `translate(${(Math.random()-0.5)*500}px, ${(Math.random()-0.5)*200}px) rotate(${Math.random()*360}deg)`;
+                else { c.style.transform = 'translate(0,0) rotate(0deg)'; c.classList.add('fM'); }
+            });
+            setTimeout(anim, 1500);
+        })();
+
+        // 4. ANJO SEGUIDOR DE CURSOR
+        let mx=0, my=0, ax=0, ay=0;
+        document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; });
+        (function f(){ ax+=(mx-ax)*0.08; ay+=(my-ay)*0.08; const g=document.getElementById('ang-follower'); g.style.left=ax+35+'px'; g.style.top=ay+35+'px'; requestAnimationFrame(f); })();
+    })();
+</script>
+</body>
+</html>
